@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarot & Oráculos</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Tarot & Oráculos</h1>
+<nav>
+<a href="#precos">Leituras</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Sabedoria ancestral para guiar seus caminhos</h2>
+<p>Agende sua leitura de Tarot ou Oráculo de forma simples e segura.</p>
+</section>
+
+<section id="precos">
+<h2>Tabela de Preços</h2>
+<div class="grid">
+<button class="agendar" data-leitura="Pergunta Sim ou Não - R$6,00">Pergunta Sim ou Não – R$6,00</button>
+<button class="agendar" data-leitura="Pergunta Explicativa - R$10,00">Pergunta Explicativa – R$10,00</button>
+<button class="agendar" data-leitura="Conselho do Baralho - R$12,00">Conselho do Baralho – R$12,00</button>
+<button class="agendar" data-leitura="Leitura Mensal - R$14,00">Leitura Mensal – R$14,00</button>
+<button class="agendar" data-leitura="Leitura Amorosa - R$25,00">Leitura Amorosa – R$25,00</button>
+</div>
+</section>
+
+<section id="contato">
+<h2>Contato rápido</h2>
+<a class="btn" href="https://wa.me/5500000000000" target="_blank">WhatsApp</a>
+<a class="btn" href="mailto:contato@tarot.com">E-mail</a>
+</section>
+
+<div id="modal" class="modal hidden">
+<form id="form">
+<h3>Agendar Leitura</h3>
+<input type="text" id="nome" placeholder="Nome completo" required>
+<input type="email" id="email" placeholder="E-mail" required>
+<input type="text" id="leitura" readonly>
+<textarea id="mensagem" placeholder="Sua pergunta" required></textarea>
+<button type="submit">Enviar</button>
+<p id="msg"></p>
+</form>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
